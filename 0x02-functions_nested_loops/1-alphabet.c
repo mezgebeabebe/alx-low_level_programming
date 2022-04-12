@@ -1,10 +1,9 @@
 #include "main.h"
 /**
- * print_alphabet - print alphabet lowercase
- *
- * Return: Always 0.
+ * print_alphabet - prints the english alphabet from a-z.
+ * Return: Nothing.
  */
-void print_alphabet(void)
+int main(void)
 {
 char c;
 for (c = 'a'; c <= 'z'; c++)
@@ -12,4 +11,5 @@ for (c = 'a'; c <= 'z'; c++)
 _putchar(c);
 }
 _putchar('\n');
+return (0);
 }
