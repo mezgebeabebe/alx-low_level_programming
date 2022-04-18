@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * _strcat - a function that concatenates two strings
@@ -8,17 +7,7 @@
  * Return: two concat strings
  */
 
-char *_strcat(char *dest, char *src)
+void reset_to_98(int *n)
 {
-int i, n;
-
-for (i = 0; dest[i] != '\0'; i++)
-{
+*n = 98;
 }
-for (n = 0; (dest[i + n] = *src++) != '\0'; n++)
-{
-}
-
-return (dest);
-}
-
