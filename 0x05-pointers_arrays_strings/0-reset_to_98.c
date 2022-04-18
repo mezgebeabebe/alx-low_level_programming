@@ -18,6 +18,6 @@ for (n = 0; (dest[i + n] = *src++) != '\0'; n++)
 {
 }
 
-
+return (dest);
 }
 
