@@ -9,7 +9,7 @@
 
 void print_number(int n)
 {
-int y = 1000000000;
+int y = 1024;
 int x, z;
 
 for (x = 0; x < 10; x++)
@@ -30,5 +30,4 @@ _putchar ((n / y) % 10 + '0');
 }
 y = (y / 10);
 }
-return (0);
 }
