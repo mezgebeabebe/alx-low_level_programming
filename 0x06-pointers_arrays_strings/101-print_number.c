@@ -9,7 +9,7 @@
 
 void print_number(int n)
 {
-int y = 1024;
+int y = 100000000000000000;
 int x, z;
 
 for (x = 0; x < 10; x++)
