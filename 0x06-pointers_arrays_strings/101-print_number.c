@@ -9,17 +9,25 @@
 
 void print_number(int n)
 {
-int a;
+int y = 1000000000;
+int x, z;
 
-if (n < 0)
+for (x = 0; x < 10; x++)
 {
-_putchar('-');
-a = n * -1;
+if ((n / y) == 0 && z == 0)
+{
+y = (y / 10);
+continue;
+}
+else if (z == 0)
+{
+_putchar((n / y) + '0');
+z++;
 }
 else
-a = n;
-if (n / 10)
-	print_number(a / 10);
-	_putchar(a % 10 + '0');
-
+{
+_putchar ((n / y) % 10 + '0');
+}
+y = (y / 10);
+}
 }
