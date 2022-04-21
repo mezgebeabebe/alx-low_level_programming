@@ -4,7 +4,7 @@
 /**
  * reverse_array - Reverses the content of an array of integers
  * @a: An array of integers
- * @n: Number of elements to swap
+ * @a: An array of integers
  *
  * Return: empty
  */
@@ -19,12 +19,11 @@ for (i = 1; i < n; i++)
 {
 p++;
 }
-
 for (k = 0; k < i / 2; k++)
 {
-	a[k] = *p;
-	*p = aux;
-	p--;
-
+aux = a[k];
+a[k] = *p;
+*p = aux;
+p--;
 }
 }
