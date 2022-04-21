@@ -20,11 +20,11 @@ void rev_string(char *n)
 
 	for (j = 0; j < i; j++, i--)
 	{
-		temp = *(n + j);
-		*(n + j) = *(n + i);
-		*(n + i) = temp;
+	temp = *(n + j);
+	*(n + j) = *(n + i);
+	*(n + i) = temp;
 	}
-}
+	}
 
 /*
  * infinite_add - add 2 numbers together
