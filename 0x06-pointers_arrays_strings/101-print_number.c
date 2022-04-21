@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * print_number - print intenger number
@@ -9,8 +9,17 @@ include "main.h"
 
 void print_number(int n)
 {
+int a;
 
-	print_numbeer(n);
-	_putchar('\n');
-	return (0);
+if (n < 0)
+{
+_putchar('-');
+a = n * -1;
+}
+else
+a = n;
+if (n / 10)
+	print_number(a / 10);
+	_putchar(a % 10 + '0');
+
 }
