@@ -22,12 +22,13 @@ for (arg = 0, size = 1; arg < ac; ++arg, ++size)
 for (chr = av[arg]; *chr; ++chr, ++size)
 	;
 }
+
 cat = (char *) malloc(sizeof(char) * size);
 
 if (!cat)
 	return (NULL);
 
-	for (arg = 0, size = 0; arg < ac; ++arg, ++size)
+for (arg = 0, size = 0; arg < ac; ++arg, ++size)
 {
 for (chr = av[arg]; *chr; ++chr, ++size)
 	cat[size] = *chr;
