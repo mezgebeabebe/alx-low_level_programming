@@ -38,7 +38,7 @@ cat = (char *) malloc(sizeof(char) * (len1 + len2 + 1));
 
 if (!cat)
 	return (NULL);
-	if (s1)
+if (s1)
 {
 for (len1 = 0; s1[len1]; ++len1)
 	cat[len1] = s1[len1];
