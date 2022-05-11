@@ -34,5 +34,6 @@ while (ud_disassemble(&ud_obj))
 printf("\t%s\n", ud_insn_hex(&ud_obj));
 }
 }
+
 return (0);
 }
